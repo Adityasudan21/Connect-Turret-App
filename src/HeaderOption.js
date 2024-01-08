@@ -9,9 +9,9 @@ function HeaderOption({ avatar, Icon, title, onClick }) {
     return (
         <div onClick={onClick} className='headerOption'>
             {Icon && <Icon className='headerOption_icon' />}
-            {avatar &&
-                <Avatar className="headerOption_avatar"></Avatar> //This Avatar Is not working for the Person and is not taking the photoURL src={user?.photourl}
-            }
+            {avatar ? (
+                <Avatar className="headerOption_avatar" src={user?.photoURL} >{user?.displayName ? user?.displayName[0] : ''}</Avatar> //This Avatar Is not working for the Person and is not taking the photoURL src={user?.photourl}
+            ) : (null)}
             <h3 className='headerOption_title'>{title}</h3>
         </div>
     )

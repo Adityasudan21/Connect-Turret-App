@@ -17,7 +17,10 @@ function Sidebar() {
         <div className='sidebar'>
             <div className='sidebar_top'>
                 <img src="https://marketplace.canva.com/EAENvp21inc/1/0/1600w/canva-simple-work-linkedin-banner-qt_TMRJF4m0.jpg" alt=""></img>
-                <Avatar className="sidebar_avatar"></Avatar>
+                {user.photoURL ? (<Avatar src={user.photoURL} className="sidebar_avatar" />)
+                    : (
+                        <Avatar className="sidebar_avatar">{user.displayName ? user.displayName[0] : ''}</Avatar>
+                    )}
                 <h2>{user.displayName}</h2>
                 <h4>{user.email}</h4>
             </div>

@@ -6,11 +6,16 @@ import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import LoopOutlinedIcon from '@mui/icons-material/LoopOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-const Post = forwardRef(({ name, description, message, photourl }, ref) => { //We created forward Ref to create reference point
+const Post = forwardRef(({ name, description, message, photoURL }, ref) => { //We created forward Ref to create reference point
     return (
         <div ref={ref} className='post'>
             <div className="post_header">
-                <Avatar src={photourl}>{name[0]}</Avatar>
+                {photoURL ? (
+                    <Avatar src={photoURL} />
+                ) : (
+                    <Avatar >{name ? name[0] : ''}</Avatar>
+                )}
+
                 <div className="post_info">
                     <h2>{name}</h2>
                     <p>{description}</p>
