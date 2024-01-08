@@ -1,46 +1,123 @@
-# Getting Started with Create React App and Redux
+# Connect-Turret : A Linkdin Based Web App
+"Connect Turret" is a LinkedIn-inspired web application designed for seamless professional networking.<br> Built with an advanced frontend stack, including React, Redux, JavaScript, HTML, and CSS, the app offers a dynamic and engaging user experience. <br>Leveraging Material-UI for a sleek and responsive design, it provides users with an intuitive interface to explore, connect, and chat with professionals.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## User Experience
+Upon logging in, users are welcomed to the main page, where they can discover and interact with a network of professionals.
+<br> The incorporation of Redux ensures efficient state management, creating a smooth and interactive browsing experience.<br> One of the standout features is the ability for users to upload and showcase their profile pictures, adding a personal touch to their online presence.
+<br>
+To enhance user engagement, "Connect Turret" utilizes React Flip-Move, providing seamless animations and transitions throughout the application. This not only adds a visually appealing touch but also contributes to the overall fluidity of the user interface.
 
-## Available Scripts
+### Tech Stack:
 
-In the project directory, you can run:
+#### Frontend:
+In the frontend development of Connect Turret, the following technologies and libraries were utilized to create a rich and interactive user interface:
 
-### `npm start`
+1. **React:**
+   - A JavaScript library for building user interfaces.
+   - Enables the creation of reusable UI components and facilitates the development of single-page applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Redux:**
+   - A state management library for JavaScript applications.
+   - Facilitates predictable state management in larger applications, enhancing data flow and making it easier to manage and debug application state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **JavaScript:**
+   - The core programming language for building dynamic and interactive web applications.
+   - Utilized for client-side scripting and enhancing the functionality of the application.
 
-### `npm test`
+4. **HTML:**
+   - The standard markup language for creating the structure of web pages.
+   - Responsible for defining the content and layout of the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **CSS:**
+   - Style sheet language used for describing the presentation of a document.
+   - Ensures the visual styling, layout, and responsiveness of the application.
 
-### `npm run build`
+6. **Material-UI:**
+   - A popular React UI framework that provides pre-built, customizable components following the Material Design guidelines.
+   - Enhances the visual appeal and consistency of the user interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. **React Flip-Move:**
+   - A React animation library used for creating smooth transitions and animations in the user interface.
+   - Provides an engaging and visually pleasing experience for users.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+These frontend technologies collectively contribute to the creation of a modern, responsive, and feature-rich web application, offering users an immersive networking experience on "Connect Turret."
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Backend:
+Tech stack used for Backend was Mainly Firebase as Backend and API and Node.js to conjuctuate the function of Cloud Functions by Firestore Database.
 
-### `npm run eject`
+1. **Firebase:**
+   - **Authentication:**
+     - Firebase Authentication is employed for user sign-up, login, and secure management of user sessions.
+   - Users can authenticate using various methods, such as email/password, Google sign-in, etc.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - **Firestore:**
+     - Firestore, a NoSQL database, stores user profiles, chat messages, and other application data.
+     - User data, including profile information, can be structured and queried efficiently.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - **Cloud Functions:**
+     - Firebase Cloud Functions are utilized for server-side logic, triggered by events such as user authentication or changes in Firestore data.
+     - Example use cases include sending notifications, updating data, or executing custom business logic.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - **Hosting:**
+     - Firebase Hosting is used to deploy and serve the frontend of the application.
+     - Provides a fast and reliable content delivery network (CDN) for static assets.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - **Cloud Storage:**
+     - Firebase Cloud Storage is employed for storing and serving user-uploaded profile pictures.
+     - Offers scalable and secure cloud-based storage solutions.
 
-## Learn More
+2. **Node.js:**
+   - Node.js is used in conjunction with Firebase Cloud Functions.
+   - Node.js allows developers to write server-side JavaScript code, which is executed in response to specific events or triggers.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This simplified and serverless backend architecture leverages the power of Firebase services for authentication, database management, server-side logic, hosting, and cloud storage. It provides a scalable and straightforward solution for building web applications with real-time features and user interactions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### APIs:
+In the context of a Firebase-based backend, the application interacts with Firebase services, which provide API endpoints for authentication, database operations, cloud functions, and storage. Here's a breakdown of the API usage:
+
+1. **Firebase Authentication API:**
+   - Firebase Authentication provides APIs for user authentication.
+   - Endpoints include methods for user sign-up, login, password recovery, and token verification.
+   - Example: `createUserWithEmailAndPassword`, `signInWithEmailAndPassword`, etc.
+
+2. **Firestore Database API:**
+   - Firestore offers a NoSQL database with APIs for data storage and retrieval.
+   - Endpoints include methods for adding, updating, deleting, and querying data.
+   - Example: `add`, `update`, `delete`, `get`.
+
+3. **Firebase Cloud Functions API:**
+   - Firebase Cloud Functions allows the deployment of server-side logic in response to events.
+   - Developers define functions that run in response to specific triggers.
+   - Example: Function to send a notification when a new message is added to the chat.
+
+4. **Firebase Cloud Storage API:**
+   - Firebase Cloud Storage provides APIs for storing and retrieving files.
+   - Endpoints include methods for uploading, downloading, and managing files.
+   - Example: `put` for uploading a file, `get` for retrieving a file.
+
+5. **Firebase Hosting API:**
+   - Firebase Hosting doesn't have a direct API but is configured using the Firebase CLI or Firebase Hosting REST API.
+   - Deployments and configurations are managed through commands like `firebase deploy`.
+
+In summary, while Firebase services provide APIs for authentication, database operations, cloud functions, and storage, developers interact with these services using client libraries and SDKs rather than making direct HTTP requests to API endpoints. The Firebase SDKs for various platforms (web, iOS, Android) encapsulate the API calls and simplify integration into the application code.
+
+### Deployment:
+- **Firebase Hosting:** The app was deployed on Firebase Hosting, allowing for easy and scalable hosting of static assets and dynamic content. Firebase Hosting also provides a globally distributed content delivery network (CDN), ensuring fast and reliable access for users around the world.
+- **Deployment URL:** The app is currently live and accessible at [https://connect-turret.web.app](https://connect-turret.web.app). Users can visit this URL to interact with the Connect Turret web application.
+
+<br>
+
+# Scalability and Project Scope
+This tech stack and deployment approach offer a scalable and efficient solution, ensuring a smooth user experience and <br>
+straightforward maintenance.
+
+### Some Screenshots of Login Page
+![https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Login.png](Log-In Page)
+
+### Some Screenshots of Main Page with Posts
+![https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Main%20Page.png](Main Page)
+
+# Hosting of App
+The application is hosted and accessible at https://connect-turret.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
+<br>
+Author: Aditya Sudan
