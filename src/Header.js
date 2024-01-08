@@ -7,11 +7,11 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { useDispatch } from 'react-redux';
 import { logout } from './features/userSlice';
 import { auth } from './firebase';
-function header() {
-    const dispatch = useDispatch;
+import { useDispatch } from 'react-redux';
+function Header() {
+    const dispatch = useDispatch();
     const logoutofApp = () => {
         dispatch(logout());
         auth.signOut();
@@ -39,4 +39,4 @@ function header() {
     );
 };
 
-export default header
+export default Header
