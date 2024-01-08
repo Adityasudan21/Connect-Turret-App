@@ -112,10 +112,10 @@ This tech stack and deployment approach offer a scalable and efficient solution,
 straightforward maintenance.
 
 ### Some Screenshots of Login Page
-![https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Login.png](Log-In Page)
+![Log-In Page](https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Login.png)
 
 ### Some Screenshots of Main Page with Posts
-![https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Main%20Page.png](Main Page)
+![Main Page](https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Main%20Page.png)
 
 # Hosting of App
 The application is hosted and accessible at https://connect-turret.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
