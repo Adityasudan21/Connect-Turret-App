@@ -21,6 +21,11 @@
     padding-left: 15px;
 }
 
+.feed_input>.MuiSvgIcon-root {
+    color: darkcyan;
+    opacity: 0.7;
+}
+
 .feed_input>form {
     display: flex;
     width: 100%;
@@ -32,6 +37,7 @@
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
+    color: darkcyan;
 }
 
 .feed_input>form>button {

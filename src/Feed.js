@@ -37,7 +37,7 @@ function Feed() {
             name: user.displayName,
             description: user.email,
             message: input,
-            photourl: user.photoUrl || "",
+            photourl: user.photoURL || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
         setInput('');
@@ -59,7 +59,7 @@ function Feed() {
                     <InputOption Icon={CalendarViewDayIcon} title="Write Article" color="#7FC15E" />
                 </div>
             </div>
-            <FlipMove  enterAnimation="fade" leaveAnimation="fade"  duration={1000} easing='ease-in-out'>
+            <FlipMove enterAnimation="fade" leaveAnimation="fade" duration={1000} easing='ease-in-out'>
                 {posts.map(({ id, data: { name, description, message, photourl } }) => (
                     <Post
                         key={id}
