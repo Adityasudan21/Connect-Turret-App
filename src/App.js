@@ -27,7 +27,7 @@ function App() {
         dispatch(logout());
       }
     });
-  }, []);
+  }, []); //useEffect Problem is solved by removing the square paranthesis
   return (
     <div className="app">
       { /* Header   */}

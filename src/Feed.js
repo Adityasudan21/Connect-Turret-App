@@ -9,7 +9,12 @@ import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import Post from './Post';
 import firebase from 'firebase/compat/app';
 import { db } from './firebase';
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
+import FlipMove from 'react-flip-move';
+
 function Feed() {
+    const user = useSelector(selectUser);
 
     const [input, setInput] = useState('');
     const [posts, setPosts] = useState([]);
@@ -29,10 +34,10 @@ function Feed() {
         e.preventDefault();
 
         db.collection('posts').add({
-            name: 'Aditya',
-            description: 'This is a test',
+            name: user.displayName,
+            description: user.email,
             message: input,
-            photourl: '',
+            photourl: user.photoUrl || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
         setInput('');
@@ -54,15 +59,17 @@ function Feed() {
                     <InputOption Icon={CalendarViewDayIcon} title="Write Article" color="#7FC15E" />
                 </div>
             </div>
-            {posts.map(({ id, data: { name, description, message, photourl } }) => (
-                <Post
-                    key={id}
-                    name={name}
-                    description={description}
-                    message={message}
-                    photourl={photourl}
-                />
-            ))}
+            <FlipMove  enterAnimation="fade" leaveAnimation="fade"  duration={1000} easing='ease-in-out'>
+                {posts.map(({ id, data: { name, description, message, photourl } }) => (
+                    <Post
+                        key={id}
+                        name={name}
+                        description={description}
+                        message={message}
+                        photourl={photourl}
+                    />
+                ))}
+            </FlipMove>
         </div>
     )
 }
