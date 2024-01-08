@@ -18,7 +18,7 @@ function Login() {
                     email: userAuth.user.email,
                     uid: userAuth.user.uid,
                     displayName: userAuth.user.displayName,
-                    photourl: userAuth.user.photoURL,
+                    photoURL: userAuth.user.photoURL,
                 }))
             }).catch(error => alert(error));
     };
@@ -30,14 +30,14 @@ function Login() {
         auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
             userAuth.user.updateProfile({
                 displayName: name,
-                photourl: profilePic,
+                photoURL: profilePic|| "",
             })
                 .then(() => {
                     dispatch(login({
                         email: userAuth.user.email,
                         uid: userAuth.user.uid,
                         displayName: name,
-                        photourl: profilePic,
+                        photoURL: profilePic || "",
                     }))
                 })
         }).catch((error) => alert(error));
@@ -53,7 +53,7 @@ function Login() {
                 <button type='submit' onClick={loginToApp}>Sign In</button>
             </form>
             <p>Not a Member? {"  "}
-                <span className='login_register' onClick={register}>Register Now</span>
+                <span className='login_register' onClick={register}>Register First</span>
             </p>
         </div>
     )
