@@ -32,7 +32,7 @@ function Header() {
                 <HeaderOption Icon={BusinessCenterIcon} title='Jobs' />
                 <HeaderOption Icon={ChatIcon} title='Messaging' />
                 <HeaderOption Icon={NotificationsIcon} title='Notifications' />
-                <HeaderOption avatar="https://i.ibb.co/FxR1JSd/Whats-App-Image-2023-12-30-at-17-35-34-f3784fb5.jpg" title='Me' onClick={logoutofApp} />
+                <HeaderOption avatar={true} title='Me' onClick={logoutofApp} />
             </div>
         </div>
 
