@@ -120,4 +120,6 @@ straightforward maintenance.
 # Hosting of App
 The application is hosted and accessible at https://connect-turret.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
 <br>
+<br>
+<hr>
 Author: Aditya Sudan
