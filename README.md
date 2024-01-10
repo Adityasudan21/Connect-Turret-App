@@ -103,7 +103,7 @@ In summary, while Firebase services provide APIs for authentication, database op
 
 ### Deployment:
 - **Firebase Hosting:** The app was deployed on Firebase Hosting, allowing for easy and scalable hosting of static assets and dynamic content. Firebase Hosting also provides a globally distributed content delivery network (CDN), ensuring fast and reliable access for users around the world.
-- **Deployment URL:** The app is currently live and accessible at [https://connect-turret.web.app](https://connect-turret.web.app). Users can visit this URL to interact with the Connect Turret web application.
+- **Deployment URL:** The app is currently live and accessible at [https://connect-turret.web.app](https://connect-turret-c6557.web.app/). Users can visit this URL to interact with the Connect Turret web application.
 
 <br>
 
@@ -118,6 +118,6 @@ straightforward maintenance.
 ![Main Page](https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Main%20Page.png)
 
 # Hosting of App
-The application is hosted and accessible at https://connect-turret.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
+The application is hosted and accessible at https://connect-turret-c6557.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
 <br>
 Author: Aditya Sudan
