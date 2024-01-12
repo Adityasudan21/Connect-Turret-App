@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "connect-turret-2",
     "public": "build",
     "ignore": [
       "firebase.json",
