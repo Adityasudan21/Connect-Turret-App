@@ -1,4 +1,4 @@
-# Connect-Turret : A Linkdin Based Web App
+# Connect-Turret : A Linkedin Based Web App
 "Connect Turret" is a LinkedIn-inspired web application designed for seamless professional networking.<br> Built with an advanced frontend stack, including React, Redux, JavaScript, HTML, and CSS, the app offers a dynamic and engaging user experience. <br>Leveraging Material-UI for a sleek and responsive design, it provides users with an intuitive interface to explore, connect, and chat with professionals.
 
 ## User Experience
