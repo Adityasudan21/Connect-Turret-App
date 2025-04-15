@@ -118,7 +118,7 @@ straightforward maintenance.
 ![Main Page](https://github.com/Adityasudan21/Connect-Turret-App/blob/main/Images/Main%20Page.png)
 
 # Hosting of App
-The application is hosted and accessible at https://connect-turret-c6557.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
+The application is hosted and accessible at https://connect-turret-2.web.app/, providing a global platform for professionals to connect, collaborate, and foster meaningful relationships. "Connect Turret" stands as a testament to the power of modern web technologies, creating an immersive networking experience for users worldwide.
 <br>
 <br>
 <hr>
